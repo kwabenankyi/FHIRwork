@@ -1,0 +1,1 @@
+to run: run the detection.py file in the 'src' folder.

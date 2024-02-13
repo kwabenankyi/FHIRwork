@@ -25,7 +25,7 @@ import main as appointment_main
 # Generate data paths with labels
 this_filepath = os.path.dirname(__file__)
 print(this_filepath)
-train_data_dir = this_filepath+'\\train'
+train_data_dir = this_filepath+'//train'
 print(train_data_dir)
 filepaths = []
 labels = []
@@ -70,7 +70,7 @@ classes = list(g_dict.keys())
 
 
 #loading the pre_trained model
-loaded_model = tf.keras.models.load_model(this_filepath+'\\pneumonia.h5',compile = False)
+loaded_model = tf.keras.models.load_model(this_filepath+'//pneumonia.h5',compile = False)
 loaded_model.compile(Adamax(learning_rate= 0.001), loss= 'categorical_crossentropy', metrics= ['accuracy'])
 
 
